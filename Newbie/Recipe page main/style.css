@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+:root {
+	--rose-800: #7a284e;
+	--rose-50: #fff7fb;
+	--stone-900: #312e2c;
+	--stone-600: #5f564d;
+	--stone-150: #e3ddd7;
+	--stone-100: #f3e5d7;
+	--brown-800: #854632;
+	--white: #fff;
+}
+
+@font-face {
+	font-family: 'Young Serif';
+	src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family: fac;
+	src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf)
+		format('truetype');
+	font-weight: 400 600 700;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
