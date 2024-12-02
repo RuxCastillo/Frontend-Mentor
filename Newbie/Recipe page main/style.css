@@ -50,10 +50,86 @@ h6 {
 	src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
 }
 @font-face {
-	font-family: fac;
+	font-family: 'Oufit';
 	src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf)
 		format('truetype');
 	font-weight: 400 600 700;
+}
+
+p,
+ul,
+ol,
+hr,
+section {
+	margin-bottom: 32px;
+}
+
+li {
+	margin-bottom: 8px;
+	padding-left: 16px;
+}
+
+.preparation li::marker {
+	color: var(--rose-800);
+}
+
+li::marker {
+	color: var(--brown-800);
+	font-weight: bold;
+}
+
+h2 {
+	margin-bottom: 24px;
+}
+
+table {
+	width: 100%;
+}
+
+table tr {
+	vertical-align: middle;
+}
+
+body {
+	max-width: 768px;
+	min-width: 375px;
+	background-color: var(--stone-100);
+}
+
+.main {
+	max-width: 768px;
+	min-width: 375px;
+	background-color: var(--white);
+	padding: 40px 32px;
+}
+
+.imagen-container {
+	width: 100%;
+	max-width: 768px;
+}
+
+.imagen {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.preparation {
+	padding: 24px;
+	background-color: var(--rose-50);
+}
+
+.preparation__title {
+	margin-bottom: 16px;
+	color: var(--rose-800);
+}
+
+.table-left {
+	padding-left: 24px;
+}
+
+.linea-abajo {
+	border-bottom: 1px solid var(--stone-150);
 }
 
 .attribution {
@@ -62,4 +138,62 @@ h6 {
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+.tp1 {
+	font-family: 'Young Serif';
+	font-size: 40px;
+	color: var(--stone-900);
+}
+
+.tp2 {
+	font-family: 'Young Serif';
+	font-size: 28px;
+	color: var(--brown-800);
+}
+
+.tp3 {
+	font-family: 'Oufit';
+	font-size: 20px;
+}
+
+.tp4 {
+	font-family: 'Oufit';
+	font-size: 16px;
+	color: var(--stone-600);
+}
+
+.tp5 {
+	font-family: 'Oufit';
+	font-weight: bold;
+	font-size: 16px;
+	color: var(--brown-800);
+}
+
+@media (min-width: 768px) {
+	body {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		min-width: 100vw;
+		padding: 128px 0;
+	}
+	.imagen-container {
+		padding: 40px;
+		background-color: var(--white);
+		border-top-left-radius: 24px;
+		border-top-right-radius: 24px;
+	}
+	.imagen {
+		border-radius: 12px;
+	}
+	.main {
+		border-bottom-left-radius: 24px;
+		border-bottom-right-radius: 24px;
+	}
+	.attribution {
+		justify-self: end;
+		font-size: 16px;
+	}
 }
