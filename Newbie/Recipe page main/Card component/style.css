@@ -1,0 +1,187 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+/* End of CSS Reset */
+
+:root {
+	--soft-blue: #8bacd9;
+	--white: #fff;
+	--cyan: #00fff8;
+	--bg-main: #0d192c;
+	--bg-card: #15263f;
+	--line: #979797;
+}
+
+body {
+	background-color: var(--bg-main);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Outfit';
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--bg-card);
+	max-height: 596px;
+	max-width: 350px;
+	min-height: 543px;
+	min-width: 327px;
+	border-radius: 15px;
+	padding: 24px;
+	color: white;
+}
+
+main section {
+	height: 302px;
+	width: 302px;
+	margin-bottom: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+section img:first-child {
+	position: absolute;
+	opacity: 0;
+}
+
+section img:last-child {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	border-radius: 8px;
+}
+
+section img:last-child:hover {
+	z-index: 2;
+	opacity: 0.8;
+}
+
+section:hover {
+	background-color: var(--cyan);
+	border-radius: 8px;
+}
+
+section:hover img:first-child {
+	opacity: 1;
+}
+
+h1 {
+	margin-bottom: 16px;
+	font-size: 22px;
+}
+
+h1:hover {
+	color: var(--cyan);
+}
+
+p {
+	font-size: 18px;
+	color: var(--soft-blue);
+	margin-bottom: 24px;
+}
+
+div {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+
+div span {
+	display: flex;
+	align-items: center;
+	color: var(--cyan);
+}
+
+div span:first-child img {
+	height: 18px;
+	width: 11px;
+	margin-right: 5px;
+}
+
+div span:last-child img {
+	height: 16px;
+	width: 16px;
+	margin-right: 5px;
+}
+
+div span:last-child {
+	color: var(--soft-blue);
+}
+
+hr {
+	border-color: var(--line);
+	background-color: var(--bg-card);
+}
+
+main footer {
+	display: flex;
+	margin: 16px 0;
+	line-height: 33px;
+	color: var(--soft-blue);
+}
+
+main footer img {
+	height: 33px;
+	width: 33px;
+	object-fit: contain;
+	border: 1px solid white;
+	border-radius: 50%;
+	margin-right: 16px;
+}
+
+main footer span {
+	color: rgb(212, 212, 212);
+}
+
+main footer span:hover {
+	color: var(--cyan);
+}
+
+.attribution {
+	font-size: 16px;
+	text-align: center;
+	position: absolute;
+	bottom: 10px;
+	color: white;
+}
+.attribution a {
+	color: hsl(229, 74%, 82%);
+}
