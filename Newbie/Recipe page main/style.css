@@ -48,6 +48,7 @@ h6 {
 @font-face {
 	font-family: 'Young Serif';
 	src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
+	font-weight: 400;
 }
 @font-face {
 	font-family: 'Oufit';
@@ -56,6 +57,7 @@ h6 {
 	font-weight: 400 600 700;
 }
 
+h1,
 p,
 ul,
 ol,
