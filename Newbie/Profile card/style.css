@@ -129,11 +129,11 @@ main img:last-child {
 }
 
 .top {
-	transform: translate(-60%, -40%);
+	transform: translate(-55%, -40%);
 	position: absolute;
 }
 
 .bottom {
-	transform: translate(55%, 57%);
+	transform: translate(43%, 57%);
 	position: absolute;
 }
