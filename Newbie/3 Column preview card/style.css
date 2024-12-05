@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f2f2f2;
+}
+
+.container {
+	height: 500px;
+	width: 920px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	height: 500px;
+	width: 307px;
+	display: flex;
+	flex-direction: column;
+	padding: 2.6rem;
+	color: white;
+	font-family: 'Lexend Deca';
+}
+
+.card__image {
+	height: 40px;
+	width: 64px;
+	margin-bottom: 32px;
+}
+
+.card__title {
+	color: #f2f2f2;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 40px;
+	font-family: 'Big Shoulders Display';
+	margin-bottom: 24px;
+}
+
+.card__p {
+	opacity: 0.75;
+	font-size: 15px;
+	line-height: 25px;
+	margin-bottom: 5rem;
+}
+
+.card__button {
+	width: 146px;
+	height: 3rem;
+	border-radius: 25px;
+	font-size: 15px;
+	line-height: 25px;
+	border: 2px solid white;
+}
+
+.first {
+	background-color: #e28625;
+	border-bottom-left-radius: 8px;
+	border-top-left-radius: 8px;
+}
+
+.first .card__button {
+	color: #e28625;
+}
+
+.first .card__button:hover {
+	background-color: #e28625;
+	color: white;
+}
+
+.second {
+	background-color: #006971;
+}
+
+.second .card__button {
+	color: #006971;
+}
+
+.second .card__button:hover {
+	background-color: #006971;
+	color: white;
+}
+
+.third {
+	background-color: #004140;
+	border-bottom-right-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.third .card__button {
+	color: #004140;
+}
+
+.third .card__button:hover {
+	background-color: #004140;
+	color: white;
+}
+
+@media (max-width: 600px) {
+	body {
+		align-items: start;
+	}
+	.container {
+		height: 1326px;
+		width: 327px;
+		flex-direction: column;
+		margin: 40px;
+	}
+	.card {
+		height: 442px;
+		width: 327px;
+		padding: 2.8rem;
+	}
+	.card__p {
+		margin-bottom: 24px;
+	}
+	.attribution {
+		display: none;
+	}
+	.first {
+		border-bottom-left-radius: 0px;
+		border-top-right-radius: 8px;
+	}
+	.third {
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 8px;
+	}
+}
