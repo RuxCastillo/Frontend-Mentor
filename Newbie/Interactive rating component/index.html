@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="./script.js" defer></script>
+
+		<title>Frontend Mentor | Interactive rating component</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				color: white;
+				font-size: 14px;
+				text-align: center;
+				position: absolute;
+				bottom: 0.5rem;
+				width: 100%;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<section class="rating">
+				<div class="rating__estrella">
+					<img src="./images/icon-star.svg" alt="star icon" />
+				</div>
+
+				<h1>How did we do?</h1>
+				<p>
+					Please let us know how we did with your support request. All feedback
+					is appreciated to help us improve our offering!
+				</p>
+				<div class="rating__buttons">
+					<button class="normal seleccionado">1</button
+					><button class="normal">2</button><button class="normal">3</button
+					><button class="normal">4</button><button class="normal">5</button>
+				</div>
+				<button class="submit">submit</button>
+			</section>
+
+			<section class="thank">
+				<img src="./images/illustration-thank-you.svg" alt="decorative image" />
+				<p>You selected <span class="numeroSeleccionado"></span> out of 5</p>
+				<h2>Thank you!</h2>
+				<p>
+					We appreciate you taking the time to give a rating. If you ever need
+					more support, don’t hesitate to get in touch!
+				</p>
+			</section>
+		</main>
+		<footer class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="https://github.com/RuxCastillo">Rubén López C</a>.
+		</footer>
+	</body>
+</html>
