@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>Frontend Mentor | Skilled e-learning landing page</title>
+	</head>
+	<body>
+		<main class="page">
+			<nav class="nav">
+				<img src="./assets/logo-dark.svg" alt="logo" class="nav__img" />
+				<button class="btn nav__btn">Get Started</button>
+			</nav>
+
+			<section class="header u-p-64-20">
+				<div class="presentation">
+					<h1 class="presentation__title">Maximize skill, minimize budget</h1>
+					<p class="presentation__p">
+						Our modern courses across a range of in-demand skills will give you
+						the knowledge you need to live the life you want.
+					</p>
+					<button class="btn presentation__btn">Get Started</button>
+				</div>
+				<picture
+					><source
+						srcset="./assets/image-hero-desktop.webp"
+						media="(min-width:1440px)" />
+					<source
+						srcset="./assets/image-hero-tablet.webp"
+						media="(min-width:768px)" />
+					<img
+						src="./assets/image-hero-mobile.webp"
+						alt="hero image"
+						class="presentation__img"
+				/></picture>
+			</section>
+
+			<section class="center u-p-64-20">
+				<div class="center__first">Check out our most popular courses!</div>
+				<div class="feature">
+					<img
+						src="./assets/icon-animation.svg"
+						alt="animation icon"
+						class="feature__icon"
+					/>
+					<h2 class="feature__title">Animation</h2>
+					<p class="feature__p">
+						Learn the latest animation techniques to create stunning motion
+						design and captivate your audience.
+					</p>
+					<button class="btn feature__btn">Get Started</button>
+				</div>
+				<div class="feature">
+					<img
+						src="./assets/icon-design.svg"
+						alt="design icon"
+						class="feature__icon"
+					/>
+					<h2 class="feature__title">Design</h2>
+					<p class="feature__p">
+						Create beautiful, usable interfaces to help shape the future of how
+						the web looks.
+					</p>
+					<button class="btn feature__btn">Get Started</button>
+				</div>
+				<div class="feature">
+					<img
+						src="./assets/icon-photography.svg"
+						alt="icon photography"
+						class="feature__icon"
+					/>
+					<h2 class="feature__title">Photography</h2>
+					<p class="feature__p">
+						Explore critical fundamentals like lighting, composition, and focus
+						to capture exceptional photos.
+					</p>
+					<button class="btn feature__btn">Get Started</button>
+				</div>
+				<div class="feature">
+					<img
+						src="./assets/icon-crypto.svg"
+						alt="crypto icon"
+						class="feature__icon"
+					/>
+					<h2 class="feature__title">Crypto</h2>
+					<p class="feature__p">
+						All you need to know to get started investing in crypto. Go from
+						beginner to advanced with this 54 hour course.
+					</p>
+					<button class="btn feature__btn">Get Started</button>
+				</div>
+				<div class="feature">
+					<img
+						src="./assets/icon-business.svg"
+						alt="business icon"
+						class="feature__icon"
+					/>
+					<h2 class="feature__title">Business</h2>
+					<p class="feature__p">
+						A step-by-step playbook to help you start, scale, and sustain your
+						business without outside investment.
+					</p>
+					<button class="btn feature__btn">Get Started</button>
+				</div>
+			</section>
+			<footer class="nav footer">
+				<img src="./assets/logo-light.svg" alt="logo" class="nav__img" /><button
+					class="btn footer__btn"
+				>
+					Get Started
+				</button>
+			</footer>
+		</main>
+	</body>
+</html>
