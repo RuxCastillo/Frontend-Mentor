@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+@font-face {
+	font-family: 'Fraunces';
+	src: url(./fonts/Fraunces-VariableFont_SOFT\WONK\opsz\wght.ttf)
+		format('truetype');
+}
+
+@font-face {
+	font-family: 'Manrope';
+	src: url(./fonts/Manrope-VariableFont_wght.ttf) format('truetype');
+}
+
+:root {
+	--green: #44ffa1;
+	--purple-900: #24053e;
+	--purple-500: #584d62;
+	--purple-100: #fcf8ff;
+	--white: #fff;
+}
+
+.text-preset-1 {
+	font-size: 5rem;
+	line-height: 100%;
+	font-weight: 600;
+	font-family: 'Fraunces';
+}
+
+.text-preset-2 {
+	font-size: 3.5rem;
+	line-height: 120%;
+	font-family: 'Fraunces';
+	font-weight: 600;
+}
+
+.text-preset-3 {
+	font-size: 32px;
+	line-height: 120%;
+	font-family: 'Fraunces';
+	font-weight: 600;
+}
+
+.text-preset-4 {
+	font-family: 'Manrope';
+	line-height: 180%;
+	font-size: 18px;
+}
+
+.text-preset-5 {
+	font-family: 'Manrope';
+	line-height: 150%;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	max-width: 1440px;
+}
+
+.data {
+	background-image: url('./images/bg-pattern-1.svg'),
+		url('./images/bg-pattern-2.svg'),
+		radial-gradient(circle at top, transparent 75%, var(--purple-100) 75%);
+	background-repeat: no-repeat, no-repeat;
+	background-position: center left -20%, center right -5%;
+	width: 100%;
+	background-color: var(--purple-900);
+	color: white;
+}
+background: radial-gradient(100% 90% at top, #e8f3f9 98%, #0000);
+
+.data__nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 56px 80px 0px;
+}
+
+.data__center {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	padding: 56px 80px;
+}
+
+.data__a {
+	text-decoration: underline;
+	text-decoration-color: var(--green);
+	text-decoration-thickness: 3px;
+	text-underline-offset: 6px;
+}
+
+.data__h1 {
+	text-align: center;
+	margin: 0 15% 40px;
+}
+
+.data__underline {
+	text-decoration: underline;
+	text-decoration-color: var(--green);
+	text-decoration-thickness: 3px;
+	text-underline-offset: 6px;
+}
+
+.btn {
+	color: var(--purple-900);
+	background-color: var(--green);
+	border: none;
+	padding: 8px 32px;
+}
+
+.data__btn {
+	margin-bottom: 88px;
+}
+
+.data__cel {
+	width: 70%;
+	object-fit: contain;
+}
