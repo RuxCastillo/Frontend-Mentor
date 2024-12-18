@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+@font-face {
+	font-family: 'Work Sans';
+	src: url(./fonts/WorkSans-VariableFont_wght.ttf) format('truetype');
+}
+
+.body {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f8eeff;
+	font-family: 'Work Sans';
+}
+
+.bg {
+	background-image: url(./images/background-pattern-desktop.svg);
+	height: 32%;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	background-size: cover;
+}
+
+.main {
+	width: 57.5%;
+	height: 63%;
+	background-color: white;
+	border-radius: 16px;
+	padding: 40px;
+	z-index: 3;
+	color: #301534;
+	min-width: 327px;
+	min-height: 527px;
+	min-height: fit-content;
+}
+
+.header {
+	display: flex;
+	margin-bottom: 36px;
+}
+
+.header__h1 {
+	font-size: 56px;
+	font-weight: bold;
+	margin-left: 24px;
+}
+
+.question {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin: 24px 0px;
+	border-bottom: 1px solid #f8eeff;
+}
+
+.question:last-of-type {
+	border-bottom: none;
+}
+
+.active .question__plus {
+	display: none;
+}
+
+.active .question__minus {
+	display: block;
+}
+
+.active .question__p {
+	display: block;
+	margin-bottom: 24px;
+}
+
+.question__h2 {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 24px;
+	padding-right: 32px;
+}
+
+.question__h2:hover {
+	cursor: pointer;
+	color: #ad28eb;
+}
+
+.question__minus {
+	display: none;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	right: 0;
+	top: 0;
+}
+
+.question__plus {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	right: 0;
+	top: 0;
+}
+
+.question__p {
+	display: none;
+	line-height: 150%;
+	color: #8b6990;
+}
+
+@media (max-width: 768px) {
+	.bg {
+		background-image: url(./images/background-pattern-mobile.svg);
+	}
+	.main {
+		padding: 24px;
+	}
+	.header {
+		margin-bottom: 24px;
+	}
+	.header__h1 {
+		font-size: 32px;
+	}
+	.question {
+		margin: 16px;
+	}
+	.question__h2 {
+		font-size: 16px;
+		margin-bottom: 24px;
+	}
+	.question__p {
+		font-size: 14px;
+	}
+}
