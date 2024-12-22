@@ -168,3 +168,14 @@ h6 {
 	border-right: 12px solid transparent;
 	border-top: 12px solid #48556a;
 }
+
+.attribution {
+	position: absolute;
+	bottom: 0.5rem;
+	font-size: 16px;
+	text-align: center;
+	font-family: 'Manrope', sans-serif;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
