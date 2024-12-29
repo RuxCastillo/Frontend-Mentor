@@ -226,6 +226,10 @@ svg {
 		max-width: 368px;
 		padding: 38px 74px 46px;
 	}
+	.purple::before {
+		border-top-left-radius: 32px;
+		border-bottom-left-radius: 32px;
+	}
 	.purple__title {
 		font-size: 24px;
 		margin-bottom: 35px;
