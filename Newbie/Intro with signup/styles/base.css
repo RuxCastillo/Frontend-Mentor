@@ -68,3 +68,13 @@ body {
 .attribution a {
 	color: hsl(228, 45%, 44%);
 }
+
+@media (min-width: 768px) {
+	body {
+		background-image: url(../images/bg-intro-desktop.png);
+		padding: 0;
+	}
+	.footer {
+		display: block;
+	}
+}
