@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+:root {
+	--rosa: #ff7979;
+	--verde: #38cc8b;
+	--morado: #5e54a4;
+	--gris-oscuro: #3d3b48;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	justify-content: center;
+	background-image: url(../images/bg-intro-mobile.png);
+	padding: 88px 24px 68px;
+	color: white;
+	height: 100vh;
+	background-color: var(--rosa);
+	text-align: center;
+	min-width: 375px;
+}
+
+.footer {
+	position: absolute;
+	display: none;
+	bottom: 0.5rem;
+	width: 100%;
+}
+
+.attribution {
+	font-size: 14px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}

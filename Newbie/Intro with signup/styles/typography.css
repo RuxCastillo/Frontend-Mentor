@@ -1,0 +1,54 @@
+.text__title {
+	font-size: 28px;
+	line-height: 36px;
+	letter-spacing: -0.29px;
+}
+
+.text__description {
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.purple__container {
+	font-size: 15px;
+	line-height: 26px;
+	letter-spacing: 0.27px;
+}
+
+.input::placeholder {
+	font-size: 14px;
+	line-height: 26px;
+	letter-spacing: 0.25px;
+	font-weight: 600;
+	color: var(--gris-oscuro);
+	opacity: 0.75;
+}
+
+.terms {
+	font-size: 11px;
+	line-height: 21px;
+	font-weight: 500;
+	color: #bab7d4;
+}
+
+.terms__link {
+	color: var(--rosa);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.btn {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 26px;
+	letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+	.text__title {
+		font-size: 50px;
+		line-height: 55px;
+		letter-spacing: -0.52px;
+	}
+}
