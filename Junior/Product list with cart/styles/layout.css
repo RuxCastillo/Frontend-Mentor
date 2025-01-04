@@ -1,0 +1,33 @@
+.page {
+	padding: 1.5rem;
+}
+
+@media (min-width: 500px) {
+	.page {
+		padding: 2.5rem;
+	}
+	.menu {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 1.5rem 2rem;
+		max-width: 800px;
+		margin: auto;
+	}
+	.menu__title {
+		grid-column: 1/4;
+	}
+}
+
+@media (min-width: 1224px) {
+	.page {
+		padding: 88px 112px;
+	}
+	.main {
+		display: grid;
+		grid-template-columns: 1fr minmax(26.5%, 384px);
+	}
+	.cart {
+		grid-column: 2/3;
+		padding-right: 0px;
+	}
+}

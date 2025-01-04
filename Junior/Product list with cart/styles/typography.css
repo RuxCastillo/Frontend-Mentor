@@ -1,0 +1,74 @@
+@font-face {
+	font-family: 'Red Hat Text';
+	src: url(../assets/fonts/RedHatText-VariableFont_wght.ttf) format('truetype');
+}
+
+.page {
+	color: var(--rose-900);
+	font-family: 'Red Hat Text', sans-serif;
+}
+
+.text-preset-1 {
+	font-size: 40px;
+	line-height: 120%;
+	font-weight: bold;
+}
+
+.text-preset-2 {
+	font-size: 24px;
+	line-height: 125%;
+	font-weight: bold;
+}
+
+.text-preset-3 {
+	font-size: 16px;
+	line-height: 150%;
+	font-weight: 600;
+}
+
+.text-preset-4 {
+	font-size: 14px;
+	line-height: 150%;
+}
+
+.text-preset-5 {
+	font-size: 14px;
+	line-height: 150%;
+	font-weight: 600;
+}
+
+.image__container--cart {
+	font-weight: bold;
+}
+
+.menu__item-title {
+	color: var(--rose-500);
+}
+
+.menu__item-price {
+	color: var(--red);
+}
+
+.cart__title {
+	color: var(--red);
+}
+
+.cart__p {
+	color: var(--rose-500);
+}
+
+.cart__item--quantity {
+	color: var(--red);
+}
+
+.cart__item--price {
+	color: var(--rose-500);
+}
+
+.cart__item--total {
+	color: var(--rose-500);
+}
+
+.button__final {
+	color: white;
+}
