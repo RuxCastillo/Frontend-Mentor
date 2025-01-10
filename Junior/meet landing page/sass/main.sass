@@ -7,6 +7,7 @@ $purple-600: #855fb1
 
 body
     font-family: 'Red Hat Display', sans-serif
+    overflow-x: hidden
 
 .logo-container 
 
@@ -87,6 +88,7 @@ body
     &--purple
         background-color: $purple-600
         margin-bottom: 2rem
+        height: 56px
 
 .cerouno
     padding: 2rem 2rem 4rem
@@ -122,6 +124,10 @@ body
     align-items: center
     margin-bottom: 4rem
 
+    @media (min-width: 1280px) 
+        max-width: 1120px
+        margin: auto
+        margin-bottom: 4rem
 
 
     img
@@ -135,6 +141,9 @@ body
         @media( min-width: 550px ) 
         width: 20%
 
+        @media (min-width: 1280px) 
+            max-height: 256px
+
 
 .second__text
     padding: 0px 2rem 4rem
@@ -142,6 +151,11 @@ body
 
     @media( min-width: 550px ) 
         padding: 0px 8rem 4rem
+
+    @media (min-width: 1280px) 
+        max-width: 544px
+        padding: 0
+        margin: auto
 
     &--span
         color: $cyan-600
@@ -169,12 +183,27 @@ body
         font-weight: 500
 
 .footer
-    background-color: $cyan-600
+    //background-image: url('./assets/desktop/image-footer.jpg')
+    //background-color: $cyan-600
     padding: 4rem 2.4rem
     text-align: center
+    //background-color: rgba(0, 0, 0, 0.5)
+    background: linear-gradient(rgba(0, 188, 212, 0.8), rgba(0, 188, 212, 0.8)), url('./assets/desktop/image-footer.jpg') // Imagen de fondo
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
 
     @media( min-width: 550px ) 
         padding: 4rem 8rem
+        background-position: center center
+
+    @media (min-width: 1280px) 
+        display: flex
+        text-align: left
+        justify-content: center
+        align-items: center
+        min-height: 312px
+        background-position: center center
 
     
     &--h3
@@ -184,9 +213,18 @@ body
         line-height: 110%
         margin-bottom: 1.5rem
 
+        @media (min-width: 1280px) 
+            max-width: 345px
+            margin-right: 50px
+
     &--p
         color: white
         font-size: 1rem
         line-height: 150%
         font-weight: 500  
         margin-bottom: 1.5rem
+
+        @media (min-width: 1280px) 
+            max-width: 355px
+            margin-right: 50px
+            padding-right: 30px
