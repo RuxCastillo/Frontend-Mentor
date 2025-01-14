@@ -1,0 +1,18 @@
+.body {
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.wrapper {
+	max-width: 70rem;
+	margin-inline: auto;
+	padding: 1.25rem;
+	box-sizing: content-box;
+
+	@media (min-width: 23.5rem) {
+		padding-inline: 2.5rem;
+	}
+
+	@media (min-width: 48rem) {
+		padding-inline: 10rem;
+	}
+}

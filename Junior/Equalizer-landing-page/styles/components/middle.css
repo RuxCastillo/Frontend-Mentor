@@ -1,0 +1,140 @@
+.middle {
+	margin-top: 110px;
+
+	@media (min-width: 23.5rem) {
+		padding-inline: 2.5rem;
+	}
+
+	.wrapper {
+		background-color: var(--slate);
+		position: relative;
+
+		@media (min-width: 23.5rem) {
+			height: 600px;
+			border-radius: 12px;
+			padding: 0;
+		}
+	}
+
+	.phone {
+		width: 208px;
+		margin-inline: auto;
+		position: absolute;
+		left: 50%;
+		top: -110px;
+		transform: translateX(-50%);
+
+		@media (min-width: 23.5rem) {
+			left: 2.5rem;
+			transform: translateX(0);
+			width: 270px;
+			top: -140px;
+		}
+
+		@media (min-width: 48rem) {
+			width: 280px;
+			height: 606px;
+			left: 7.25rem;
+			z-index: 2;
+		}
+	}
+
+	.pattern {
+		margin-inline: auto;
+
+		@media (min-width: 23.5rem) {
+			margin: 0;
+			height: 29.25rem;
+		}
+
+		@media (min-width: 48rem) {
+			position: relative;
+			left: 350px;
+		}
+	}
+
+	.orange {
+		position: relative;
+		top: -110px;
+
+		@media (min-width: 23.5rem) {
+			top: -400px;
+			left: 275px;
+		}
+
+		@media (min-width: 48rem) {
+			left: 550px;
+		}
+	}
+}
+
+.orange {
+	background-color: var(--orange);
+	padding-block: 3rem;
+	margin-left: 0;
+	transform: translateX(-1.25rem);
+	width: calc(100% + 2.5rem);
+	padding-inline: 1.25rem;
+
+	@media (min-width: 23.5rem) {
+		max-width: 356px;
+		border-radius: 16px;
+		height: 628px;
+		padding: 3rem;
+	}
+
+	@media (min-width: 48rem) {
+		max-width: 512px;
+	}
+
+	.subtitle {
+		font-size: var(--text-preset-3);
+		margin-bottom: 1.5rem;
+	}
+
+	.middle__p {
+		font-size: var(--text-preset-4);
+		line-height: 150%;
+		margin-bottom: 2.5rem;
+	}
+
+	.price {
+		display: flex;
+		align-items: center;
+		font-size: var(--text-preset-4);
+		line-height: 150%;
+		margin-bottom: 3rem;
+
+		.price__dollars {
+			font-size: var(--text-preset-2);
+			line-height: 110%;
+			margin-right: 1rem;
+		}
+	}
+}
+
+.btn {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-block: 1rem;
+	border: none;
+	border-radius: 12px;
+	font-size: var(--text-preset-6);
+
+	img {
+		margin-right: 6px;
+	}
+}
+
+.btn--black {
+	margin-bottom: 1rem;
+	background-color: black;
+	color: white;
+}
+
+.btn--white {
+	margin-bottom: 4rem;
+	background-color: white;
+}

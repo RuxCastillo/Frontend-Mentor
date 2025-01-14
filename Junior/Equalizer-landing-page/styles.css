@@ -1,0 +1,7 @@
+@import url('./styles/reset.css');
+@import url('./styles/variables.css');
+@import url('./styles/base.css');
+@import url('./styles/utilities.css');
+@import url('./styles/components/header.css');
+@import url('./styles/components/middle.css');
+@import url('./styles/components/footer.css');
